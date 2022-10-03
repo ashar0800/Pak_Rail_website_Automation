@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -14,6 +14,8 @@ namespace MT
     {
        
        public static IWebDriver driver;
+       public static string userMobile = "923405619771";
+       public static string userPassword = "asharnasir0800";
         public BaseClass()
         {
 
@@ -62,23 +64,7 @@ namespace MT
 
         
             
-            //showTrainStops();
-
-            
-            /*
-            driver.FindElement(By.XPath("//*[@id='LeftPanel1_LeftPanelInternal1_btnPlanJourney']")).Click();
-            //*[@id="planYourJourney"]/div[1]/div[1]/div/button/span[1]
-            //*[@id="planYourJourney"]/div[1]/div[1]/div/div/ul/li[2]/a/span[1]  #1.1
-            //*[@id="planYourJourney"]/div[1]/div[1]/div/div/ul/li[3]/a/span[1]  #1.2
-            //*[@id='planYourJourney']/div[1]/div[2]/div/button/span[1]
-            //*[@id="planYourJourney"]/div[1]/div[2]/div/div/ul/li[165]/a/span[1]  #2.1
-            //*[@id='planYourJourney']/div[1]/div[3]/div/button/span[1]
-            //*[@id="planYourJourney"]/div[1]/div[3]/div/div/ul/li[137]/a/span[1]  #3.1
-            */
-        
-
-        
-
+         //showTrainStops();
         public void showTrainStops()
         {
             
@@ -88,11 +74,11 @@ namespace MT
             driver.FindElement(By.XPath("//*[@id='modalTitle']")).Click();
             Thread.Sleep(100);
 
-            for (int i = 0; i < 2000; i += 25)
-            {
-                ((IJavaScriptExecutor)driver).ExecuteScript("window.scrollTo(0," + i + ")");
-                Thread.Sleep(60);
-            }
+            //for (int i = 0; i < 2000; i += 25)
+            //{
+            //    ((IJavaScriptExecutor)driver).ExecuteScript("window.scrollTo(0," + i + ")");
+            //    Thread.Sleep(60);
+            //}
         }
 
         
