@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -19,7 +19,10 @@ namespace MT
         public string url = "https://www.pakrail.gov.pk/";
         
         
-        CheckFare ticket = new CheckFare();
+
+        Login login=new Login();
+        CalculateFare ticket = new CalculateFare();
+        BookTicket bookTicket = new BookTicket();
         
         
         [TestMethod]
@@ -27,7 +30,16 @@ namespace MT
         {
 
             ticket.URL(url);
-            ticket.checkFare(3200);
+            ticket.checkFareViaRoute();
+            //ticket.checkFareViaTrain();
+
+            //login.URL(url);
+            //login.logintest("923405619771","asharnasir0800");
+
+            //bookTicket.URL(url);
+            //bookTicket.bookTicketViaLogin();
+
+
         }
     }
 }
