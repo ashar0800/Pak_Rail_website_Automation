@@ -17,11 +17,12 @@ namespace MT
 
         BaseClass b = new BaseClass("Chrome");
         public string url = "https://www.pakrail.gov.pk/";
-        
+
         
 
+
         Login login=new Login();
-        CalculateFare ticket = new CalculateFare();
+        CheckFare ticket = new CheckFare();
         BookTicket bookTicket = new BookTicket();
         
         
@@ -34,7 +35,7 @@ namespace MT
             //ticket.checkFareViaTrain();
 
             //login.URL(url);
-            //login.logintest("923405619771","asharnasir0800");
+            //login.loginTest();
 
             //bookTicket.URL(url);
             //bookTicket.bookTicketViaLogin();
