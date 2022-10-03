@@ -32,17 +32,13 @@ namespace MT
         By submitButton = By.XPath("//*[@id='LeftPanel1_LeftPanelInternal1_btnPlanJourney']");
         By checkFareButton = By.XPath("//*[@id='rptTrains_btnCheckFare_0']");
 
-        By checkFareValidity = By.XPath("//*[@id='form1']/div[3]/div[5]/div/div[2]/div[3]/div/table/tbody/tr[2]/td[2]");
-
-
-
-
-       
+        By checkFareValidity = By.XPath("//*[@id='form1']/div[3]/div[5]/div/div[2]/div[3]/div/table/tbody/tr[2]/td[2]");  
 
         By getfareButton = By.XPath("//*[@id='LeftPanel1_LeftPanelInternal1_btnGetFare']");
         By checkSeatFareValidity = By.XPath("//*[@id='form1']/div[3]/div[5]/div/div[2]/div[3]/div/table/tbody/tr[2]/td[3]");
 
         #endregion
+
         public void checkFareViaRoute()
         {
             
