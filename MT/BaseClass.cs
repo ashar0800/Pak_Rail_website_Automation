@@ -14,8 +14,8 @@ namespace MT
     {
        
        public static IWebDriver driver;
-       public static string userMobile = "923405619771";
-       public static string userPassword = "asharnasir0800";
+       public static string userMobile = "92**********";
+       public static string userPassword = "*************";
         public BaseClass()
         {
 
